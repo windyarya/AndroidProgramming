@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal"
+    android:layout_margin="5pt"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="140pt"
+        android:layout_height="30pt"
+        android:text="@string/app_name2"
+        android:textAlignment="center"
+        android:layout_marginTop="30pt"
+        android:layout_marginBottom="30pt"
+        android:textSize="13pt"
+        android:textColor="@color/navy" />
+
+    <Button
+        android:id="@+id/bio"
+        android:layout_width="140pt"
+        android:layout_height="30pt"
+        android:drawableEnd="@drawable/ic_baseline_person_outline_24"
+        android:background="@drawable/rounded_button_2"
+        android:layout_marginTop="0pt"
+        android:layout_marginBottom="4pt"
+        android:text="@string/menuBio"
+        android:textAlignment="viewStart"
+        android:textColor="@color/whiteb"/>
+
+    <Button
+        android:layout_width="140pt"
+        android:layout_height="30pt"
+        android:drawableEnd="@drawable/ic_outline_calculate_24"
+        android:background="@drawable/rounded_button_2"
+        android:layout_marginTop="4pt"
+        android:layout_marginBottom="4pt"
+        android:id="@+id/calc"
+        android:text="@string/menuCalc"
+        android:textAlignment="viewStart"
+        android:textColor="@color/whiteb"/>
+
+<!--    <Button-->
+<!--        android:layout_width="140pt"-->
+<!--        android:layout_height="30pt"-->
+<!--        android:drawableEnd="@drawable/ic_outline_calculate_24"-->
+<!--        android:background="@drawable/rounded_button_2"-->
+<!--        android:layout_marginTop="4pt"-->
+<!--        android:layout_marginBottom="4pt"-->
+<!--        android:id="@+id/calc2"-->
+<!--        android:text="@string/menuCalc2"-->
+<!--        android:textAlignment="viewStart"/>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4pt"
+        android:layout_gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ig"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:layout_marginEnd="10pt"
+            android:layout_marginStart="12pt"
+            app:icon="@drawable/ic_instagram"
+            app:iconGravity="textEnd"
+            app:iconPadding="0pt"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/linkedin"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:layout_marginEnd="10pt"
+            android:layout_marginStart="10pt"
+            app:icon="@drawable/ic_linkedin"
+            app:iconGravity="textEnd"
+            app:iconPadding="0pt"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/github"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:layout_marginEnd="10pt"
+            android:layout_marginStart="10pt"
+            app:icon="@drawable/ic_square_github"
+            app:iconGravity="textEnd"
+            app:iconPadding="0pt"/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

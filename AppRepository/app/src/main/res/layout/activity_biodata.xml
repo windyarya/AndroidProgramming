@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal"
+    tools:context=".biodata">
+
+    <LinearLayout
+        android:layout_width="180pt"
+        android:layout_height="100pt"
+        android:gravity="top|center"
+        android:background="@color/navy">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/profile"
+            android:layout_marginTop="30pt"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/navy"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="140pt"
+        android:layout_height="30pt"
+        android:layout_marginTop="3pt"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="140pt"
+            android:layout_height="7pt"
+            android:text="Nama"
+            android:gravity="start"
+            android:textSize="5pt"
+            android:textColor="@color/blueb"/>
+
+        <TextView
+            android:layout_width="140pt"
+            android:layout_height="14pt"
+            android:text="I Putu Windy Arya Sagita"
+            android:gravity="start"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:textColor="@color/navy"/>
+
+        <View
+            android:layout_width="140pt"
+            android:layout_height="2dp"
+            android:background="@color/blueb" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="140pt"
+        android:layout_height="30pt"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="140pt"
+            android:layout_height="7pt"
+            android:text="NRP"
+            android:gravity="start"
+            android:textSize="5pt"
+            android:textColor="@color/blueb"/>
+
+        <TextView
+            android:layout_width="140pt"
+            android:layout_height="14pt"
+            android:text="5027201071"
+            android:gravity="start"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:textColor="@color/navy"/>
+
+        <View
+            android:layout_width="140pt"
+            android:layout_height="2dp"
+            android:background="@color/blueb"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="140pt"
+        android:layout_height="30pt"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="140pt"
+            android:layout_height="7pt"
+            android:text="Departemen"
+            android:gravity="start"
+            android:textSize="5pt"
+            android:textColor="@color/blueb"/>
+
+        <TextView
+            android:layout_width="140pt"
+            android:layout_height="14pt"
+            android:text="Teknologi Informasi"
+            android:gravity="start"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:textColor="@color/navy"/>
+
+        <View
+            android:layout_width="140pt"
+            android:layout_height="2dp"
+            android:background="@color/blueb"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="140pt"
+        android:layout_height="30pt"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="140pt"
+            android:layout_height="7pt"
+            android:text="Alamat"
+            android:gravity="start"
+            android:textSize="5pt"
+            android:textColor="@color/blueb"/>
+
+        <TextView
+            android:layout_width="140pt"
+            android:layout_height="14pt"
+            android:text="Sukolilo, Surabaya, Jawa Timur"
+            android:gravity="start"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:textColor="@color/navy"/>
+
+        <View
+            android:layout_width="140pt"
+            android:layout_height="2dp"
+            android:background="@color/blueb"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="140pt"
+        android:layout_height="30pt"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="140pt"
+            android:layout_height="7pt"
+            android:text="Telepon"
+            android:gravity="start"
+            android:textSize="5pt"
+            android:textColor="@color/blueb"/>
+
+        <TextView
+            android:layout_width="140pt"
+            android:layout_height="14pt"
+            android:text="088219114280"
+            android:gravity="start"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:textColor="@color/navy"/>
+
+        <View
+            android:layout_width="140pt"
+            android:layout_height="2dp"
+            android:background="@color/blueb"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="140pt"
+        android:layout_height="30pt"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="140pt"
+            android:layout_height="7pt"
+            android:text="Email"
+            android:gravity="start"
+            android:textSize="5pt"
+            android:textColor="@color/blueb"/>
+
+        <TextView
+            android:layout_width="140pt"
+            android:layout_height="14pt"
+            android:text="windyarya4@gmail.com"
+            android:gravity="start"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:textColor="@color/navy"/>
+
+        <View
+            android:layout_width="140pt"
+            android:layout_height="2dp"
+            android:background="@color/blueb"/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

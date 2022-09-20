@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Rewind</string>
+    <string name="app_name2">Rewind</string>
+    <string name="menuBio">Biodata</string>
+    <string name="menuCalc">Kalkulator</string>
+    <string name="menuCalc2">Kalkulator v2</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multi">x</string>
+    <string name="divide">/</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
