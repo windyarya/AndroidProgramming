@@ -17,11 +17,15 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Rewind");
         Button bCalc = (Button) findViewById(R.id.calc);
         Button bBio = (Button) findViewById(R.id.bio);
+//        Button bDb = (Button) findViewById(R.id.dbproject);
+        Button bHr = (Button) findViewById(R.id.healthrecord);
         Button bIG = (Button) findViewById(R.id.ig);
         Button bLinkedin = (Button) findViewById(R.id.linkedin);
         Button bGithub = (Button) findViewById(R.id.github);
         bCalc.setOnClickListener(opCalc);
         bBio.setOnClickListener(opBio);
+//        bDb.setOnClickListener(opDb);
+        bHr.setOnClickListener(opHr);
         bIG.setOnClickListener(opIG);
         bLinkedin.setOnClickListener(opLinkedIn);
         bGithub.setOnClickListener(opGithub);
@@ -40,6 +44,20 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             openBio();
+        }
+    };
+
+    View.OnClickListener opDb = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            openDb();
+        }
+    };
+
+    View.OnClickListener opHr = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            openHr();
         }
     };
 
@@ -69,9 +87,19 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intentCalc, 0);
     }
 
+    void openDb() {
+        Intent intentDb = new Intent(getBaseContext(), dbProject.class);
+        startActivityForResult(intentDb, 0);
+    }
+
     void openBio() {
         Intent intentBio = new Intent(getBaseContext(), biodata.class);
         startActivityForResult(intentBio, 0);
+    }
+
+    void openHr() {
+        Intent IntentHr = new Intent(getBaseContext(), healthRecord.class);
+        startActivity(IntentHr);
     }
 
     void linkIG() {

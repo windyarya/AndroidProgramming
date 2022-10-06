@@ -8,6 +8,12 @@
     <string name="minus">-</string>
     <string name="multi">x</string>
     <string name="divide">/</string>
+    <string-array name="jenisRecord">
+        <item>Riwayat Sakit</item>
+        <item>Riwayat Makan dan Minum</item>
+        <item>Riwayat Olahraga</item>
+        <item>Riwayat Vaksinasi</item>
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
