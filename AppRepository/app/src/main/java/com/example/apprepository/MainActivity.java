@@ -17,14 +17,14 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Rewind");
         Button bCalc = (Button) findViewById(R.id.calc);
         Button bBio = (Button) findViewById(R.id.bio);
-//        Button bDb = (Button) findViewById(R.id.dbproject);
+        Button bDb = (Button) findViewById(R.id.dbproject);
         Button bHr = (Button) findViewById(R.id.healthrecord);
         Button bIG = (Button) findViewById(R.id.ig);
         Button bLinkedin = (Button) findViewById(R.id.linkedin);
         Button bGithub = (Button) findViewById(R.id.github);
         bCalc.setOnClickListener(opCalc);
         bBio.setOnClickListener(opBio);
-//        bDb.setOnClickListener(opDb);
+        bDb.setOnClickListener(opDb);
         bHr.setOnClickListener(opHr);
         bIG.setOnClickListener(opIG);
         bLinkedin.setOnClickListener(opLinkedIn);

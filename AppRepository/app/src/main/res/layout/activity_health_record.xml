@@ -20,7 +20,7 @@
             android:layout_width="150pt"
             android:layout_height="9pt"
             android:id="@+id/textViewJudul"
-            android:text="Judul"
+            android:text="Judul Record"
             android:textAlignment="textStart"
             android:textSize="7pt"
             android:textColor="@color/navy"/>
@@ -59,6 +59,74 @@
             android:textAlignment="viewStart"
             android:text="2022-10-07"
             style="?android:spinnerStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10pt"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="0pt"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="75pt"
+                android:layout_height="9pt"
+                android:id="@+id/textViewHeight"
+                android:text="Tinggi Badan"
+                android:textAlignment="textStart"
+                android:textSize="7pt"
+                android:textColor="@color/navy"/>
+
+            <EditText
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="75pt"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/heightrk"
+                android:textColor="@color/navy"
+                android:textSize="10pt"
+                android:maxLines ="5"
+                android:maxLength ="2000"
+                android:scrollHorizontally="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="75pt"
+                android:layout_height="9pt"
+                android:id="@+id/textViewWeight"
+                android:text="Berat Badan"
+                android:textAlignment="textStart"
+                android:textSize="7pt"
+                android:textColor="@color/navy"/>
+
+            <EditText
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="75pt"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/weightrk"
+                android:textColor="@color/navy"
+                android:textSize="10pt"
+                android:maxLines ="5"
+                android:maxLength ="2000"
+                android:scrollHorizontally="false"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout

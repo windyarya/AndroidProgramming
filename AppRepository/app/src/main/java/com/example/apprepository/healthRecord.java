@@ -20,9 +20,9 @@ import java.util.Calendar;
 public class healthRecord extends AppCompatActivity {
     private DatePickerDialog datePickerDialog;
     private Button dateButton;
-    private EditText judul, desc;
+    private EditText judul, desc, tinggi, berat;
     private Button submitD, tgl,  cekD;
-    private SQLiteDatabase healthrec;
+    private SQLiteDatabase ehr;
     private SQLiteOpenHelper Opendb;
 
     @Override
@@ -37,6 +37,8 @@ public class healthRecord extends AppCompatActivity {
         judul = (EditText) findViewById(R.id.judulrk);
         tgl = (Button) findViewById(R.id.tglrk);
         desc = (EditText) findViewById(R.id.descrk);
+        tinggi = (EditText) findViewById(R.id.heightrk);
+        berat = (EditText) findViewById(R.id.weightrk);
         submitD = (Button) findViewById(R.id.submitRecord);
         cekD = (Button) findViewById(R.id.cekRecord);
         dateButton = findViewById(R.id.tglrk);
@@ -46,25 +48,25 @@ public class healthRecord extends AppCompatActivity {
         cekD.setOnClickListener(opData);
         dateButton.setOnClickListener(opDatePicker);
 
-        Opendb = new SQLiteOpenHelper(this, "hrecord.sql", null, 1) {
+        Opendb = new SQLiteOpenHelper(this, "ehrec.sql", null, 1) {
             @Override
-            public void onCreate(SQLiteDatabase hrecord) {
+            public void onCreate(SQLiteDatabase ehrec) {
 
             }
 
             @Override
-            public void onUpgrade(SQLiteDatabase hrecord, int oldVersion, int newVersion) {
+            public void onUpgrade(SQLiteDatabase ehrec, int oldVersion, int newVersion) {
 
             }
         };
 
-        healthrec = Opendb.getWritableDatabase();
-        healthrec.execSQL("create table if not exists rec(judul TEXT, tanggal TEXT, deskripsi TEXT);");
+        ehr = Opendb.getWritableDatabase();
+        ehr.execSQL("create table if not exists rec(judul TEXT, tanggal TEXT, tinggi_badan TEXT, berat_badan TEXT, deskripsi TEXT);");
     }
     @Override
     protected void onStop() {
         super.onStop();
-        healthrec.close();
+        ehr.close();
         Opendb.close();
     }
 
@@ -91,12 +93,14 @@ public class healthRecord extends AppCompatActivity {
         newData.put("judul", judul.getText().toString());
         newData.put("tanggal", tgl.getText().toString());
         newData.put("deskripsi", desc.getText().toString());
-        healthrec.insert("rec", null, newData);
+        newData.put("tinggi_badan", tinggi.getText().toString());
+        newData.put("berat_badan", berat.getText().toString());
+        ehr.insert("rec", null, newData);
         Toast.makeText(this, "Data Tersimpan", Toast.LENGTH_LONG).show();
     }
 
     private void cek() {
-        Cursor cur = healthrec.rawQuery("select * from rec where tanggal='" + tgl.getText().toString() + "'", null);
+        Cursor cur = ehr.rawQuery("select * from rec where tanggal='" + tgl.getText().toString() + "'", null);
 
         if (cur.getCount() > 0) {
             Toast.makeText(this, "Record ditemukan sejumlah " + cur.getCount(), Toast.LENGTH_LONG).show();
