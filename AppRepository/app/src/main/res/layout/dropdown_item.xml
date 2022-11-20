@@ -3,5 +3,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:text="TextView"
-    android:padding="14dp"
-    android:textSize="15pt"/>
+    android:textSize="7pt"
+    android:padding="5pt"/>

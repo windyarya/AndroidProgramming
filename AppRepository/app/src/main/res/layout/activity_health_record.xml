@@ -13,59 +13,91 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="10pt"
+        android:layout_marginTop="5pt"
         android:layout_gravity="center">
 
         <TextView
             android:layout_width="150pt"
-            android:layout_height="9pt"
-            android:id="@+id/textViewJudul"
-            android:text="Judul Record"
+            android:layout_height="7pt"
+            android:id="@+id/textViewNama"
+            android:text="Nama"
             android:textAlignment="textStart"
-            android:textSize="7pt"
+            android:textSize="5pt"
             android:textColor="@color/navy"/>
 
         <EditText
             android:layout_width="150pt"
-            android:layout_height="25pt"
+            android:layout_height="20pt"
             android:inputType="textCapSentences|textShortMessage"
-            android:id="@+id/judulrk"
+            android:id="@+id/namark"
             android:textColor="@color/navy"
-            android:textSize="10pt"/>
+            android:textSize="7pt"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="10pt"
+        android:layout_marginTop="5pt"
         android:layout_gravity="center">
 
         <TextView
             android:layout_width="150pt"
-            android:layout_height="9pt"
-            android:id="@+id/textViewTgl"
-            android:text="Tanggal"
+            android:layout_height="7pt"
+            android:id="@+id/textViewTglLahir"
+            android:text="Tanggal Lahir"
             android:textAlignment="textStart"
-            android:textSize="7pt"
+            android:textSize="5pt"
             android:textColor="@color/navy"/>
 
         <Button
             android:layout_width="150pt"
-            android:layout_height="25pt"
-            android:id="@+id/tglrk"
+            android:layout_height="20pt"
+            android:id="@+id/tgllhrrk"
             android:textColor="@color/navy"
-            android:textSize="10pt"
+            android:textSize="7pt"
             android:textAlignment="viewStart"
-            android:text="2022-10-07"
+            android:text="2000-10-07"
             style="?android:spinnerStyle" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5pt"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="150pt"
+            android:layout_height="7pt"
+            android:id="@+id/textViewjk"
+            android:text="Jenis Kelamin"
+            android:textAlignment="textStart"
+            android:textSize="5pt"
+            android:textColor="@color/navy"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="150pt"
+            android:layout_height="23pt">
+
+            <AutoCompleteTextView
+                android:layout_width="150pt"
+                android:layout_height="20pt"
+                android:id="@+id/jeniskrk"
+                android:text="Perempuan"
+                android:textSize="7pt"
+                android:inputType="none"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10pt"
+        android:layout_marginTop="5pt"
         android:layout_gravity="center">
 
         <LinearLayout
@@ -77,21 +109,21 @@
 
             <TextView
                 android:layout_width="75pt"
-                android:layout_height="9pt"
+                android:layout_height="7pt"
                 android:id="@+id/textViewHeight"
                 android:text="Tinggi Badan"
                 android:textAlignment="textStart"
-                android:textSize="7pt"
+                android:textSize="5pt"
                 android:textColor="@color/navy"/>
 
             <EditText
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="75pt"
-                android:layout_height="wrap_content"
-                android:inputType="text"
+                android:layout_height="20pt"
+                android:inputType="number"
                 android:id="@+id/heightrk"
                 android:textColor="@color/navy"
-                android:textSize="10pt"
+                android:textSize="7pt"
                 android:maxLines ="5"
                 android:maxLength ="2000"
                 android:scrollHorizontally="false"/>
@@ -106,21 +138,21 @@
 
             <TextView
                 android:layout_width="75pt"
-                android:layout_height="9pt"
+                android:layout_height="7pt"
                 android:id="@+id/textViewWeight"
                 android:text="Berat Badan"
                 android:textAlignment="textStart"
-                android:textSize="7pt"
+                android:textSize="5pt"
                 android:textColor="@color/navy"/>
 
             <EditText
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="75pt"
-                android:layout_height="wrap_content"
-                android:inputType="text"
+                android:layout_height="20pt"
+                android:inputType="number"
                 android:id="@+id/weightrk"
                 android:textColor="@color/navy"
-                android:textSize="10pt"
+                android:textSize="7pt"
                 android:maxLines ="5"
                 android:maxLength ="2000"
                 android:scrollHorizontally="false"/>
@@ -133,16 +165,68 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="10pt"
+        android:layout_marginTop="5pt"
         android:layout_gravity="center">
 
         <TextView
             android:layout_width="150pt"
-            android:layout_height="9pt"
+            android:layout_height="7pt"
+            android:id="@+id/textViewJudul"
+            android:text="Judul Record"
+            android:textAlignment="textStart"
+            android:textSize="5pt"
+            android:textColor="@color/navy"/>
+
+        <EditText
+            android:layout_width="150pt"
+            android:layout_height="20pt"
+            android:inputType="textCapSentences|textShortMessage"
+            android:id="@+id/judulrk"
+            android:textColor="@color/navy"
+            android:textSize="7pt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5pt"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="150pt"
+            android:layout_height="7pt"
+            android:id="@+id/textViewTgl"
+            android:text="Tanggal Record"
+            android:textAlignment="textStart"
+            android:textSize="5pt"
+            android:textColor="@color/navy"/>
+
+        <Button
+            android:layout_width="150pt"
+            android:layout_height="20pt"
+            android:id="@+id/tglrk"
+            android:textColor="@color/navy"
+            android:textSize="7pt"
+            android:textAlignment="viewStart"
+            android:text="2022-10-07"
+            style="?android:spinnerStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5pt"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="150pt"
+            android:layout_height="7pt"
             android:id="@+id/textViewDesc"
             android:text="Deskripsi"
             android:textAlignment="textStart"
-            android:textSize="7pt"
+            android:textSize="5pt"
             android:textColor="@color/navy"/>
 
         <EditText
@@ -152,7 +236,7 @@
             android:inputType="textCapSentences|textMultiLine"
             android:id="@+id/descrk"
             android:textColor="@color/navy"
-            android:textSize="10pt"
+            android:textSize="7pt"
             android:maxLines ="5"
             android:maxLength ="2000"
             android:scrollHorizontally="false"/>
@@ -160,17 +244,17 @@
 
     <Button
         android:layout_width="150pt"
-        android:layout_height="25pt"
+        android:layout_height="20pt"
         android:background="@drawable/rounded_button_2"
-        android:layout_marginTop="10pt"
+        android:layout_marginTop="5pt"
         android:text="Submit Record"
         android:id="@+id/submitRecord"/>
 
     <Button
         android:layout_width="150pt"
-        android:layout_height="25pt"
+        android:layout_height="20pt"
         android:background="@drawable/rounded_button_2"
-        android:layout_marginTop="10pt"
+        android:layout_marginTop="5pt"
         android:text="Cek Record"
         android:id="@+id/cekRecord"/>
 

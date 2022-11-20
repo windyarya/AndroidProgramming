@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().setTitle("Rewind");
+
         Button bCalc = (Button) findViewById(R.id.calc);
         Button bBio = (Button) findViewById(R.id.bio);
         Button bDb = (Button) findViewById(R.id.dbproject);
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Button bIG = (Button) findViewById(R.id.ig);
         Button bLinkedin = (Button) findViewById(R.id.linkedin);
         Button bGithub = (Button) findViewById(R.id.github);
+
         bCalc.setOnClickListener(opCalc);
         bBio.setOnClickListener(opBio);
         bDb.setOnClickListener(opDb);
